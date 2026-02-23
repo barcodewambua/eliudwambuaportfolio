@@ -26,7 +26,8 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
-  padding-top: var(--header-height);
+  /* header spacing at top, small padding on other sides */
+  padding: var(--header-height) var(--spacing-md) var(--spacing-md) var(--spacing-md);
   scroll-behavior: smooth;
   position: relative;
   overflow-x: hidden;
@@ -762,6 +763,15 @@ strong {
 
 /* Responsive Media Queries */
 @media (max-width: 767px) {
+  /* use an alternate static background on phones instead of video */
+  #bg-video {
+    display: none;
+  }
+  /* simple background image on phones */
+  body {
+    background: url('assets/videos/smebg.jpg') center/cover fixed no-repeat;
+  }
+
   .hero {
     padding: 1rem 0;
   }
@@ -868,6 +878,17 @@ strong {
 
   .gallery {
     gap: 1.5rem;
+  }
+}
+
+/* extra wide monitors */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1400px; /* prevent overly stretched content */
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
   }
 }
 

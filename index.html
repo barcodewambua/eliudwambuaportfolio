@@ -11,6 +11,9 @@
 </head>
 <body>
   <video id="bg-video" autoplay muted loop playsinline>
+    <!-- lightweight version for narrow viewports; create a lower‑bitrate file at this path -->
+    <source media="(max-width: 767px)" src="assets/videos/v2-small.mp4" type="video/mp4">
+    <!-- default/full‑quality sources -->
     <source src="assets/videos/v2.mp4" type="video/mp4">
     <source src="assets/videos/v2.mpv" type="video/mp4">
   </video>
