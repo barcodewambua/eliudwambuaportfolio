@@ -430,51 +430,7 @@ section.hero {
   color: #ff8c00;
 }
 
-/* Gallery & Images */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--spacing-lg);
-}
-
-.gallery figure {
-  background: rgba(26, 26, 26, 0.8);
-  backdrop-filter: blur(8px);
-  border-radius: var(--radius);
-  padding: 0;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  transition: all 0.3s ease;
-}
-
-.gallery figure:hover {
-  border-color: rgba(255, 140, 0, 0.3);
-  box-shadow: 0 12px 30px rgba(255, 140, 0, 0.1);
-}
-
-.gallery img {
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.gallery figure:hover img {
-  transform: scale(1.05);
-  filter: brightness(1.05) saturate(1.1);
-}
-
-.gallery figcaption {
-  padding: var(--spacing-md);
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.2));
-  transition: color 0.3s ease;
-}
-
-.gallery figure:hover figcaption {
-  color: var(--text);
-}
+/* Gallery styles removed; not used in current markup */
 
 /* Footer & Utilities */
 .site-footer {
@@ -501,7 +457,7 @@ section.hero {
 }
 
 /* small slide‑down animation for header when page loads */
-@keyframes slideDown {
+@keyframes slideDownHeader {
   from {
     transform: translateY(-100%);
   }
@@ -510,7 +466,7 @@ section.hero {
   }
 }
 .site-header {
-  animation: slideDown 0.5s ease forwards;
+  animation: slideDownHeader 0.5s ease forwards;
 }
 
 
@@ -802,9 +758,7 @@ strong {
     width: 60%;
   }
 
-  .gallery {
-    grid-template-columns: 1fr;
-  }
+  /* gallery removed from responsive rules */
 
   .headshot-card:hover {
     transform: translateY(-8px);
@@ -876,9 +830,7 @@ strong {
     height: 260px;
   }
 
-  .gallery {
-    gap: 1.5rem;
-  }
+  /* gallery removed from responsive rules */
 }
 
 /* extra wide monitors */

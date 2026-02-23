@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
-  <rect width="100%" height="100%" fill="#0A66C2" rx="6"/>
-  <text x="36" y="36" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#fff">LinkedIn</text>
-  <rect x="8" y="12" width="28" height="36" rx="4" fill="#fff"/>
-  <rect x="14" y="18" width="16" height="24" rx="2" fill="#0A66C2"/>
-</svg>

@@ -28,24 +28,7 @@ document.addEventListener('DOMContentLoaded',function(){
   window.addEventListener('resize', adjustHeaderSpacing);
   window.addEventListener('load', adjustHeaderSpacing);
 
-  // Gallery modal: open clicked gallery images in a Bootstrap modal
-  const galleryImages = document.querySelectorAll('.gallery-img');
-  const modalImage = document.getElementById('modalImage');
-  const imageModalEl = document.getElementById('imageModal');
-  let bsModal;
-  if (imageModalEl && window.bootstrap) {
-    bsModal = new bootstrap.Modal(imageModalEl);
-  }
-  galleryImages.forEach(img => {
-    img.addEventListener('click', () => {
-      const full = img.dataset.full || img.src;
-      if (modalImage) {
-        modalImage.src = full;
-        modalImage.alt = img.alt || '';
-        if (bsModal) bsModal.show();
-      }
-    });
-  });
+  // gallery plugin removed; no elements use .gallery-img so this code was unused
 
   // simple scroll‑reveal animation using IntersectionObserver
   const revealObserver = new IntersectionObserver((entries, obs) => {
