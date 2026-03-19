@@ -14,26 +14,21 @@
   <link rel="stylesheet" href="styles.min.css">
 </head>
 <body>
-  <video id="bg-video" autoplay muted loop playsinline>
-    <source src="assets/videos/v2.mp4" type="video/mp4">
-  </video>
-
   <header class="site-header">
     <div class="container nav-container">
-      <a class="brand" href="index.html">
+      <a class="brand desktop-brand" href="index.html">
         <img src="assets/logo-removebg-preview.png" alt="Eliud Wambua logo" class="header-logo" loading="lazy">
       </a>
 
-      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
 
       <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
         <ul>
-          <li><a href="index.html#about">About</a></li>
+          <li class="mobile-logo"><a href="index.html"><img src="assets/logo-removebg-preview.png" alt="Logo" class="header-logo" loading="lazy"></a></li>
+          <li class="about-item"><a href="index.html#about">About</a></li>
           <li><a href="index.html#projects">Projects</a></li>
           <li><a href="index.html#skills">Skills</a></li>
           <li><a href="index.html#contact">Contact</a></li>
           <li><a class="active" href="certifications.html">Certifications</a></li>
-          <li class="mobile-resume"><a class="btn resume" href="assets/resume.pdf" download>Resume</a></li>
         </ul>
       </nav>
 

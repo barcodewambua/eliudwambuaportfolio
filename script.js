@@ -6,16 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const year2 = document.getElementById('year2');
   if (year2) year2.textContent = new Date().getFullYear();
 
-  // Mobile nav toggle
-  const navToggle = document.getElementById('nav-toggle');
-  const primaryNav = document.getElementById('primary-nav');
-  if (navToggle && primaryNav) {
-    navToggle.addEventListener('click', () => {
-      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
-      navToggle.setAttribute('aria-expanded', String(!expanded));
-      primaryNav.classList.toggle('open');
-    });
-  }
 
   // Adjust body padding to account for fixed header
   function adjustHeaderSpacing() {
