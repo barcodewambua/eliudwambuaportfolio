@@ -722,6 +722,10 @@ strong {
     white-space: nowrap;
   }
 
+  .primary-nav a::after {
+    display: none !important;
+  }
+
   .header-logo {
     height: 32px;
     margin-bottom: -4px;
